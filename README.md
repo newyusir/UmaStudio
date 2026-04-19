@@ -7,39 +7,13 @@ Check out the [original AssetStudio project](https://github.com/Perfare/AssetStu
 _____________________________________________________________________________________________________________________________
 How to use:
 - Select the game: Options -> Specify Game
-- Load the meta file: Misc -> Load Meta file ( will load automatically next time)
 
 You can load your bundle now
 
+- Local -> read your local honse game installation
+- Standalone -> download asset directly from honse game cdn
+
 In case you want to encrypt the bundle back ( like after modding ): Misc -> Encrypt bundle file -> Select your decrypted bundle(s) 
-_____________________________________________________________________________________________________________________________
-CLI Version:
-```
-Description:
-
-Usage:
-  AssetStudioCLI <input_path> <output_path> [options]
-
-Arguments:
-  <input_path>   Input file/folder.
-  <output_path>  Output folder.
-
-Options:
-  --silent                                                Hide log messages.
-  --type <Texture2D|Sprite|etc..>                         Specify unity class type(s)
-  --filter <filter>                                       Specify regex filter(s).
-  --game <BH3|CB1|CB2|CB3|GI|SR|TOT|ZZZ> (REQUIRED)       Specify Game.
-  --map_op <AssetMap|Both|CABMap|None>                    Specify which map to build. [default: None]
-  --map_type <JSON|XML>                                   AssetMap output type. [default: XML]
-  --map_name <map_name>                                   Specify AssetMap file name.
-  --group_assets_type <ByContainer|BySource|ByType|None>  Specify how exported assets should be grouped. [default: 0]
-  --no_asset_bundle                                       Exclude AssetBundle from AssetMap/Export.
-  --no_index_object                                       Exclude IndexObject/MiHoYoBinData from AssetMap/Export.
-  --xor_key <xor_key>                                     XOR key to decrypt MiHoYoBinData.
-  --ai_file <ai_file>                                     Specify asset_index json file path (to recover GI containers).
-  --version                                               Show version information
-  -?, -h, --help                                          Show help and usage information
-```
 _____________________________________________________________________________________________________________________________
 NOTES:
 ```
