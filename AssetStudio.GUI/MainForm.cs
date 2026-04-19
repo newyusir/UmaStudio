@@ -92,6 +92,7 @@ namespace AssetStudio.GUI
             InitalizeOptions();
             InjectUmaJPMetaMenu();
             TryAutoLoadUmaMetaFromSettings();
+            InitializeUmaFileManagerIntegration();
             FMODinit();
         }
 
@@ -1025,14 +1026,13 @@ namespace AssetStudio.GUI
 
         private void tabPageSelected(object sender, TabControlEventArgs e)
         {
-            switch (e.TabPageIndex)
+            if (e.TabPage == tabPage1)
             {
-                case 0:
-                    treeSearch.Select();
-                    break;
-                case 1:
-                    listSearch.Select();
-                    break;
+                treeSearch.Select();
+            }
+            else if (e.TabPage == tabPage2)
+            {
+                listSearch.Select();
             }
         }
 
@@ -2611,6 +2611,8 @@ namespace AssetStudio.GUI
             {
                 TryAutoLoadUmaMetaFromSettings();
             }
+
+            OnGameChangedUmaFileManagerIntegration();
         }
 
         private async void specifyNameComboBox_SelectedIndexChanged(object sender, EventArgs e)

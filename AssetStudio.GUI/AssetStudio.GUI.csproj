@@ -17,6 +17,11 @@
 		<ProjectReference Include="..\AssetStudio\AssetStudio.csproj" />
 	</ItemGroup>
 
+	<ItemGroup Condition="'$(TargetFramework)' == 'net8.0-windows'">
+		<ProjectReference Include="..\..\UmamusumeExplorer-master\UmamusumeData\UmamusumeData.csproj"
+			AdditionalProperties="ExcludeManagedMetaBuilder=true" />
+	</ItemGroup>
+
 	<ItemGroup>
 		<EmbeddedResource Update="Properties\Resources.resx">
 			<Generator>ResXFileCodeGenerator</Generator>
