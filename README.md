@@ -27,4 +27,5 @@ Special Thank to:
 - Khang06: [Project](https://github.com/khang06/genshinblkstuff) for extraction.
 - Radioegor146: [Asset-indexes](https://github.com/radioegor146/gi-asset-indexes) for recovered/updated asset_index's.
 - Ds5678: [AssetRipper](https://github.com/AssetRipper/AssetRipper)[[discord](https://discord.gg/XqXa53W2Yh)] for information about Asset Formats & Parsing.
-- mafaca: [uTinyRipper](https://github.com/mafaca/UtinyRipper) for `YAML` and `AnimationClipConverter`. 
+- mafaca: [uTinyRipper](https://github.com/mafaca/UtinyRipper) for `YAML` and `AnimationClipConverter`.
+- MarshmallowAndroid: [UmamusumeExplorer](https://github.com/MarshmallowAndroid/UmamusumeExplorer) for file explorer
